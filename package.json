@@ -1,0 +1,13 @@
+{
+  "name": "herdr-plugin-agent-repo-header",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Show agent, repository, and branch names in Herdr pane headers.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

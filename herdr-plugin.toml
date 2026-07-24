@@ -1,0 +1,35 @@
+id = "afaz.agent-repo-header"
+name = "Agent Repo Header"
+version = "0.1.0"
+min_herdr_version = "0.7.5"
+platforms = ["macos", "linux"]
+description = "Show the agent, repository, and Git branch in Herdr agent pane headers."
+
+[[startup]]
+command = ["node", "index.js", "all"]
+
+[[actions]]
+id = "refresh"
+title = "Agent Repo Header: refresh all agents"
+contexts = ["pane", "workspace"]
+command = ["node", "index.js", "all"]
+
+[[events]]
+on = "pane.agent_detected"
+command = ["node", "index.js", "event"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["node", "index.js", "event"]
+
+[[events]]
+on = "pane.focused"
+command = ["node", "index.js", "event"]
+
+[[events]]
+on = "worktree.created"
+command = ["node", "index.js", "event"]
+
+[[events]]
+on = "worktree.opened"
+command = ["node", "index.js", "event"]
