@@ -6,6 +6,10 @@ Shows each coding agent pane as:
 pi - repo-name - branch-name
 ```
 
+## Example
+
+![Herdr agent sidebar showing the agent, repository, and branch](assets/agent-repo-header.png)
+
 The plugin uses Herdr's pane metadata API, so the title appears directly in the
 pane's top border. It refreshes existing agents when Herdr starts and updates
 titles when agents are detected, change status, or receive focus.
